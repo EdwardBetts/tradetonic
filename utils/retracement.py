@@ -214,7 +214,7 @@ class QuoteAnalysis(object):
         return rl
         
     def get_trend( self ):
-        return "{0:.2f}%".format(100 * self.last_pattern[4])
+        return "{0:.2%}".format(self.last_pattern[4])
         
     def get_current_odds( self, p1 = None, p2 = None, p3 = None, p4 = None, trend = None ):
         if p1 == None or p2 == None or p3 == None or p4 == None:
